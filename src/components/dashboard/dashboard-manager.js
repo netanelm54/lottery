@@ -5,6 +5,7 @@ import Carousel from "../common/carousel";
 import Card from "./card";
 import { fetchLottery as fetchLotteryAction } from "../../actions";
 import { useEffect, useState } from "react";
+// import { items as lottery } from "../../data.json";
 
 const Button = styled.div`
   border-radius: 3px;
@@ -39,7 +40,7 @@ const DashboardManager = ({ fetchLottery, lottery }) => {
       <Button onClick={toggleSort}>
         {sortOrder === "reward" ? "Sort by End Date" : "Sort by Reward"}
       </Button>
-      {lottery && lottery.length && (
+      {lottery && lottery.length > 0 && (
         <Carousel name="lotteryCards" cardWidth={110}>
           {lottery.map((item) => (
             <Card item={item} />
