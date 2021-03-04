@@ -1,8 +1,6 @@
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Countdown from "react-countdown";
-import Carousel from "../common/carousel";
-import { items } from "./data.json";
 import { formatBigNumbers } from "../../utils/formater";
 
 const Container = styled.div`

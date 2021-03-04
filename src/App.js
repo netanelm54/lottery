@@ -1,4 +1,3 @@
-import { connect } from "react-redux";
 import styled, { ThemeProvider } from "styled-components";
 import { HashRouter, Route, Switch, Redirect } from "react-router-dom";
 import { theme } from "./theme";
